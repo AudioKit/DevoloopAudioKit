@@ -2,6 +2,7 @@
 
 import Foundation
 import AudioKit
+import AudioKitEX
 import DevoloopAudioKit
 import GameplayKit
 import AVFoundation
