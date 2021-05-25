@@ -1,16 +1,11 @@
-# DevoloopAudioKit
-
-Extension to AudioKit
-
-## AudioKit Guitar Processors
+# Guitar Processors for AudioKit
 
 While all of AudioKit's effects and filters can be useful for processing guitar,
-this folder contains AudioKit nodes that are distinctly guitaristic in their intent,
-but they can be used on any source material.
+this package contains AudioKit nodes that are distinctly guitaristic in their intent.
 
 ## DynaRage Tube Compressor 
 
-This is based on DynaRage Tube Compressor RE for Reason by Devoloop Srls (Mike Gazzarusso).
+This is based on DynaRage Tube Compressor RE for Reason by DevoloMike Gazzarusso).
 
 ## Rhino Guitar Processor
 
