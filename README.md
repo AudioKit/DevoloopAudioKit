@@ -3,13 +3,10 @@
 While all of AudioKit's effects and filters can be useful for processing guitar,
 this package contains AudioKit nodes that are distinctly guitaristic in their intent.
 
-## DynaRage Tube Compressor 
+  * DynaRage Compressor - tube compressor emulation
+  * Rhino Guitar Processor - guitar amplifier head and cabinet simulator
 
-This is based on DynaRage Tube Compressor RE for Reason by DevoloMike Gazzarusso).
-
-## Rhino Guitar Processor
-
-Guitar amplifier head and cabinet simulator by Mike Gazzaruso.
+Both of these were written by Mike Gazzarusso.
 
 ## Installation
 
