@@ -10,3 +10,7 @@ This is based on DynaRage Tube Compressor RE for Reason by DevoloMike Gazzarusso
 ## Rhino Guitar Processor
 
 Guitar amplifier head and cabinet simulator by Mike Gazzaruso.
+
+## Installation
+
+Use Swift package manager and point to this URL: https://github.com/AudioKit/DevoloopAudioKit
