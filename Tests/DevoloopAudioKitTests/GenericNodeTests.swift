@@ -1,26 +1,11 @@
-// Copyright AudioKit. All Rights Reserved. Revision History at http://github.com/AudioKit/AudioKit/
+// Copyright AudioKit. All Rights Reserved.
 
-import Foundation
 import AudioKit
 import DevoloopAudioKit
-import GameplayKit
 import AVFoundation
 import XCTest
 
-func setParams(node: Node, rng: GKRandomSource) {
-
-    for param in node.parameters {
-        let def = param.def
-        let size = def.range.upperBound - def.range.lowerBound
-        let value = rng.nextUniform() * size + def.range.lowerBound
-        print("setting parameter \(def.name) to \(value)")
-        param.value = value
-    }
-
-}
-
 class GenericNodeTests: XCTestCase {
-
 
     func nodeParameterTest(md5: String, factory: (Node)->Node, m1MD5: String = "", audition: Bool = false) {
 
