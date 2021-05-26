@@ -14,6 +14,11 @@ this package contains AudioKit nodes that are distinctly guitaristic in their in
 
 Both of these were written by Mike Gazzarusso.
 
+## Documentation
+
+The Githbub [Wiki](https://github.com/AudioKit/DevoloopAudioKit/wiki) hosts the documentation for this project.
+
+
 ## Installation
 
 Use Swift package manager and point to this URL: https://github.com/AudioKit/DevoloopAudioKit
