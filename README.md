@@ -1,10 +1,15 @@
-# Guitar Processors for AudioKit
+<div align=center>
+<img src="https://github.com/AudioKit/Cookbook/raw/main/Cookbook/Cookbook/Assets.xcassets/audiokit-icon.imageset/audiokit-icon.png" width="20%"/>
+
+# Devoloop AudioKit (AudioKit Guitar Processors)
 
 [![Build Status](https://github.com/AudioKit/DevoloopAudioKit/workflows/CI/badge.svg)](https://github.com/AudioKit/DevoloopAudioKit/actions?query=workflow%3ACI)
 [![License](https://img.shields.io/github/license/AudioKit/DevoloopAudioKit)](https://github.com/AudioKit/DevoloopAudioKit/blob/main/LICENSE)
 [![Platform](https://img.shields.io/cocoapods/p/AudioKit)](https://github.com/AudioKit/AudioKit/wiki)
 [![Reviewed by Hound](https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg)](https://houndci.com)
 [![Twitter Follow](https://img.shields.io/twitter/follow/AudioKitPro.svg?style=social)](https://twitter.com/AudioKitPro)
+
+</div>
 
 While all of AudioKit's effects and filters can be useful for processing guitar,
 this package contains AudioKit nodes that are distinctly guitaristic in their intent.
@@ -16,9 +21,9 @@ Both of these were written by Mike Gazzarusso.
 
 ## Documentation
 
-The Githbub [Wiki](https://github.com/AudioKit/DevoloopAudioKit/wiki) hosts the documentation for this project.
+* [DynaRage Tube Compressor](https://github.com/AudioKit/DevoloopAudioKit/wiki/DynaRageCompressor) - based on DynaRage Tube Compressor RE for Reason by Mike Gazzarusso.
+* [Rhino Guitar Processor](https://github.com/AudioKit/DevoloopAudioKit/wiki/RhinoGuitarProcessor) - Guitar amplifier head and cabinet simulator by Mike Gazzaruso.
 
+## Installation via Swift Package Manager
 
-## Installation
-
-Use Swift package manager and point to this URL: https://github.com/AudioKit/DevoloopAudioKit
+To add AudioKitUI to your Xcode project, select File -> Swift Packages -> Add Package Depedancy. Enter `https://github.com/AudioKit/DevoloopAudioKit` for the URL. 
