@@ -1,3 +1,6 @@
+<div align=center>
+<img src="https://github.com/AudioKit/Cookbook/raw/main/Cookbook/Cookbook/Assets.xcassets/audiokit-icon.imageset/audiokit-icon.png" width="20%"/>
+
 # Devoloop AudioKit (AudioKit Guitar Processors)
 
 [![Build Status](https://github.com/AudioKit/DevoloopAudioKit/workflows/CI/badge.svg)](https://github.com/AudioKit/DevoloopAudioKit/actions?query=workflow%3ACI)
@@ -5,6 +8,8 @@
 [![Platform](https://img.shields.io/cocoapods/p/AudioKit)](https://github.com/AudioKit/AudioKit/wiki)
 [![Reviewed by Hound](https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg)](https://houndci.com)
 [![Twitter Follow](https://img.shields.io/twitter/follow/AudioKitPro.svg?style=social)](https://twitter.com/AudioKitPro)
+
+</div>
 
 While all of AudioKit's effects and filters can be useful for processing guitar,
 this folder contains AudioKit nodes that are distinctly guitaristic in their intent,
