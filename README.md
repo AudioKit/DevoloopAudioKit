@@ -1,5 +1,5 @@
 <div align=center>
-<img src="https://github.com/AudioKit/Cookbook/raw/main/Cookbook/Cookbook/Assets.xcassets/audiokit-icon.imageset/audiokit-icon.png" width="20%"/>
+<img src="https://github.com/AudioKit/DevoloopAudioKit/blob/develop/images/dynarage.jpg" width="100%" />
 
 # Devoloop AudioKit (AudioKit Guitar Processors)
 
@@ -10,6 +10,7 @@
 [![Twitter Follow](https://img.shields.io/twitter/follow/AudioKitPro.svg?style=social)](https://twitter.com/AudioKitPro)
 
 </div>
+
 
 While all of AudioKit's effects and filters can be useful for processing guitar,
 this folder contains AudioKit nodes that are distinctly guitaristic in their intent,
