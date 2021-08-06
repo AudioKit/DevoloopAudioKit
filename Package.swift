@@ -5,7 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "DevoloopAudioKit",
-    platforms: [.macOS(.v10_14), .iOS(.v13), .tvOS(.v13)],
+    platforms: [.macOS(.v10_13), .iOS(.v11), .tvOS(.v11)],
     products: [.library(name: "DevoloopAudioKit", targets: ["DevoloopAudioKit"])],
     dependencies: [.package(url: "https://github.com/AudioKit/AudioKit", from: "5.2.0")],
     targets: [
