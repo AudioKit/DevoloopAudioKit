@@ -20,4 +20,4 @@ this package contains AudioKit nodes that are distinctly guitaristic in their in
 
 ## Installation via Swift Package Manager
 
-To add AudioKitUI to your Xcode project, select File -> Swift Packages -> Add Package Depedancy. Enter `https://github.com/AudioKit/DevoloopAudioKit` for the URL. 
+To add AudioKitUI to your Xcode project, select File -> Swift Packages -> Add Package Depedancy. Enter `https://github.com/AudioKit/DevoloopAudioKit` for the URL.
