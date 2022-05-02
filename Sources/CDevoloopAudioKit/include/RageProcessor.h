@@ -1,7 +1,7 @@
 //
 //  RageProcessor.h
 //
-//  Created by Mike Gazzaruso, revision history on Githbub.
+//  Created by Mike Gazzaruso, revision history on Github.
 //  Copyright © 2015 Mike Gazzaruso. All rights reserved.
 //
 
