@@ -1,16 +1,15 @@
 // Copyright AudioKit. All Rights Reserved.
 
-import AVFoundation
 import AudioKit
 import AudioKitEX
+import AVFoundation
 import CAudioKitEX
 
 /// Guitar head and cab simulator.
 ///
 public class RhinoGuitarProcessor: Node {
-
     let input: Node
-    
+
     /// Connected nodes
     public var connections: [Node] { [input] }
 
@@ -26,7 +25,8 @@ public class RhinoGuitarProcessor: Node {
         address: akGetParameterAddress("RhinoGuitarProcessorParameterPreGain"),
         defaultValue: 5.0,
         range: 0.0 ... 10.0,
-        unit: .generic)
+        unit: .generic
+    )
 
     /// Gain applied before processing.
     @Parameter(preGainDef) public var preGain: AUValue
@@ -38,7 +38,8 @@ public class RhinoGuitarProcessor: Node {
         address: akGetParameterAddress("RhinoGuitarProcessorParameterPostGain"),
         defaultValue: 0.7,
         range: 0.0 ... 1.0,
-        unit: .linearGain)
+        unit: .linearGain
+    )
 
     /// Gain applied after processing.
     @Parameter(postGainDef) public var postGain: AUValue
@@ -50,7 +51,8 @@ public class RhinoGuitarProcessor: Node {
         address: akGetParameterAddress("RhinoGuitarProcessorParameterLowGain"),
         defaultValue: 0.0,
         range: -1.0 ... 1.0,
-        unit: .generic)
+        unit: .generic
+    )
 
     /// Amount of Low frequencies.
     @Parameter(lowGainDef) public var lowGain: AUValue
@@ -62,7 +64,8 @@ public class RhinoGuitarProcessor: Node {
         address: akGetParameterAddress("RhinoGuitarProcessorParameterMidGain"),
         defaultValue: 0.0,
         range: -1.0 ... 1.0,
-        unit: .generic)
+        unit: .generic
+    )
 
     /// Amount of Middle frequencies.
     @Parameter(midGainDef) public var midGain: AUValue
@@ -74,7 +77,8 @@ public class RhinoGuitarProcessor: Node {
         address: akGetParameterAddress("RhinoGuitarProcessorParameterHighGain"),
         defaultValue: 0.0,
         range: -1.0 ... 1.0,
-        unit: .generic)
+        unit: .generic
+    )
 
     /// Amount of High frequencies.
     @Parameter(highGainDef) public var highGain: AUValue
@@ -86,11 +90,12 @@ public class RhinoGuitarProcessor: Node {
         address: akGetParameterAddress("RhinoGuitarProcessorParameterDistortion"),
         defaultValue: 1.0,
         range: 1.0 ... 20.0,
-        unit: .generic)
+        unit: .generic
+    )
 
     /// Distortion Amount
     @Parameter(distortionDef) public var distortion: AUValue
-    
+
     // MARK: - Initialization
 
     /// Initialize this Rhino head and cab simulator node
@@ -114,7 +119,7 @@ public class RhinoGuitarProcessor: Node {
         distortion: AUValue = distortionDef.defaultValue
     ) {
         self.input = input
-        
+
         setupParameters()
 
         self.preGain = preGain

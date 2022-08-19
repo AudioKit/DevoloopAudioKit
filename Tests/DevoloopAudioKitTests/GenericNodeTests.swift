@@ -1,14 +1,12 @@
 // Copyright AudioKit. All Rights Reserved.
 
 import AudioKit
-import DevoloopAudioKit
 import AVFoundation
+import DevoloopAudioKit
 import XCTest
 
 class GenericNodeTests: XCTestCase {
-
-    func nodeParameterTest(md5: String, factory: (Node)->Node, m1MD5: String = "", audition: Bool = false) {
-
+    func nodeParameterTest(md5: String, factory: (Node) -> Node, m1MD5: String = "", audition: Bool = false) {
         let url = Bundle.module.url(forResource: "12345", withExtension: "wav", subdirectory: "TestResources")!
         let player = AudioPlayer(url: url)!
         let node = factory(player)
@@ -16,7 +14,7 @@ class GenericNodeTests: XCTestCase {
         let duration = node.parameters.count + 1
 
         let engine = AudioEngine()
-        var bigBuffer: AVAudioPCMBuffer? = nil
+        var bigBuffer: AVAudioPCMBuffer?
 
         engine.output = node
 
@@ -32,7 +30,6 @@ class GenericNodeTests: XCTestCase {
         }
 
         for i in 0 ..< node.parameters.count {
-
             let node = factory(player)
             engine.output = node
 
@@ -47,13 +44,12 @@ class GenericNodeTests: XCTestCase {
             audio.append(engine.render(duration: 1.0))
 
             bigBuffer?.append(audio)
-
         }
 
         XCTAssertFalse(bigBuffer!.isSilent)
 
         if audition { bigBuffer!.audition() }
-        
+
         XCTAssertTrue([md5, m1MD5].contains(bigBuffer!.md5), "\(node)\nFAILEDMD5 \(bigBuffer!.md5)")
     }
 

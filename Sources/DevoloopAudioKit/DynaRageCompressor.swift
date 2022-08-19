@@ -1,23 +1,22 @@
 // Copyright AudioKit. All Rights Reserved.
 
-import AVFoundation
 import AudioKit
 import AudioKitEX
+import AVFoundation
 import CAudioKitEX
 
 /// DynaRage Tube Compressor | Based on DynaRage Tube Compressor RE for Reason
 /// by Devoloop Srls
 ///
 public class DynaRageCompressor: Node {
-
     let input: Node
-    
+
     /// Connected nodes
     public var connections: [Node] { [input] }
 
     /// Underlying AVAudioNode
     public var avAudioNode = instantiate(effect: "dyrc")
-    
+
     // MARK: - Parameters
 
     /// Specification details for ratio
@@ -27,7 +26,8 @@ public class DynaRageCompressor: Node {
         address: akGetParameterAddress("DynaRageCompressorParameterRatio"),
         defaultValue: 1,
         range: 1.0 ... 20.0,
-        unit: .generic)
+        unit: .generic
+    )
 
     /// Ratio to compress with, a value > 1 will compress
     @Parameter(ratioDef) public var ratio: AUValue
@@ -39,7 +39,8 @@ public class DynaRageCompressor: Node {
         address: akGetParameterAddress("DynaRageCompressorParameterThreshold"),
         defaultValue: 0.0,
         range: -100.0 ... 0.0,
-        unit: .decibels)
+        unit: .decibels
+    )
 
     /// Threshold (in dB) 0 = max
     @Parameter(thresholdDef) public var threshold: AUValue
@@ -51,7 +52,8 @@ public class DynaRageCompressor: Node {
         address: akGetParameterAddress("DynaRageCompressorParameterAttackDuration"),
         defaultValue: 0.1,
         range: 0.1 ... 500.0,
-        unit: .seconds)
+        unit: .seconds
+    )
 
     /// Attack dration
     @Parameter(attackDurationDef) public var attackDuration: AUValue
@@ -63,7 +65,8 @@ public class DynaRageCompressor: Node {
         address: akGetParameterAddress("DynaRageCompressorParameterReleaseDuration"),
         defaultValue: 0.1,
         range: 1.0 ... 20.0,
-        unit: .seconds)
+        unit: .seconds
+    )
 
     /// Release duration
     @Parameter(releaseDurationDef) public var releaseDuration: AUValue
@@ -75,7 +78,8 @@ public class DynaRageCompressor: Node {
         address: akGetParameterAddress("DynaRageCompressorParameterRage"),
         defaultValue: 0.1,
         range: 0.1 ... 20.0,
-        unit: .generic)
+        unit: .generic
+    )
 
     /// Rage Amount
     @Parameter(rageDef) public var rage: AUValue
@@ -87,7 +91,8 @@ public class DynaRageCompressor: Node {
         address: akGetParameterAddress("DynaRageCompressorParameterRageEnabled"),
         defaultValue: 1.0,
         range: 0.0 ... 1.0,
-        unit: .boolean)
+        unit: .boolean
+    )
 
     /// Rage ON/OFF Switch
     @Parameter(rageEnabledDef) public var rageEnabled: Bool
@@ -113,9 +118,9 @@ public class DynaRageCompressor: Node {
         rageEnabled: Bool = rageEnabledDef.defaultValue == 1.0
     ) {
         self.input = input
-        
+
         setupParameters()
-        
+
         self.ratio = ratio
         self.threshold = threshold
         self.attackDuration = attackDuration
