@@ -1,5 +1,5 @@
 <div align=center>
-<img src="https://github.com/AudioKit/DevoloopAudioKit/blob/develop/images/dynarage.jpg" width="100%" />
+<img src="https://github.com/AudioKit/DevoloopAudioKit/blob/main/images/dynarage.jpg?raw=true" width="100%" />
 
 # Devoloop AudioKit (Guitar Processors)
 
